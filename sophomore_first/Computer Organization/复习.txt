@@ -1,0 +1,62 @@
+Chap 2:20points  2TorF 2分 && 2填空 18分 
+（Key!）
+进制变化二进制到十六进制 √
+Machine words公式 2^w-1 √
+Data representation table会给(会考什么???)
+Big endian && Little endian(小端法更重要 考试主要考虑小端法) Linux Android iOS都用小端法 √
+Boolean Algebra (Logical Calculation 或与非异或) √
+Calculate the set √
+Shift operation(left/right shift) right shift is more compilicated cuz of the differnt types of shift: logical shift / arithmetic shift √
+Mapping between signed & unsigned (principle 有符号和无符号数的转换要会 √) /o buffer overflow occurs in 32 or 64bits system(有/无符号数的操作不考 但是如何实现的要懂(mod操作)(进行加减乘除之后有可能有错误 但是是合理的还是可以得到的 因为有强制类型转换 所以溢出的情况是合理的 不会报错 只是最后得到的数会有异常)) tip:截断操作是什么??
+Sign Extension
+
+Chap 3:8points 2choices && several 填空
+(Key!)
+AMD&Intel are not ISA or architecture （我猜会出choice判断哪个是ISA）√
+ISA:IA32,x86-64,Y86 √
+Register&condition codes are storage(1 single bit storage——condition codes,and it is just like a register) (寄存器名字不用记 只需要明确64 processor supports 32 source codes [reason: 64位的寄存器沿用了32位的 并做了update]) √
+??Memory addressing mode(swap()的example一定要搞明白) √
+??Cannot do memory-memory transfer with a single instruction[reason:???] √ （需要依靠register进行操作）
+Binray operand instruction(addq subq imulq salq sarq shrq xorq andq orq 只需要知道他们是常用的指令(存在一元指令[???什么是一元or二元])) √
+Concept and function of condition codes(CF ZF SF OF x86有四个条件码 但是在Y86只有三个 OF ZF SF) √
+Register saving conventions：callee??(不需要记住caller/callee名字 仅需要利用定义来回答问题) 声明函数的局部变量非常多，寄存器肯定不够，当出现函数调用的时候，寄存器中的数谁来保存的问题,是调用函数来保存还是被调用的函数来保存，tip:[%rsp栈顶指针]  （ppt3第五十页） √
+Align principles（alignment principle）结构体的大小一定是4or8bytes的整数倍，取决于机器的字长 √
+[problem:3.45] 
+
+
+Chap 4: 24points 
+(Key!!)
+Combinational circuit() √
+HCL expression: 出现在考试的diagram部分 （新教材problem4.9）(转换成电路图??) √
+Sequential circuits:register file寄存器文件(与寄存器不同，但是相关，通过寄存器文件每次可以访问2个寄存器)(includes multiple ports寄存器文件有多个端口) √
+SEQ stages: Fetch Decode Execute …… （Computed values全部要记住—>考试时候给的模板需要能够读懂，然后转换成具体的操作(ps:课堂做过的一道题)） √
+SEQ logic: fetch decode execute 这三个组合电路很重要，期末考试要分析其中之一(10points!!!!!)  √
+
+
+Chap 5: 23points 
+Code motion: 提供concept和procedure(可以用自己的话讲)
+Eliminate:
+Loop unrolling 循环展开: 
+enhancing parallelism 多路并行: 与Code part有关(看懂ppt代码)
+reassociation transformation: Compare with simple …… explain the stress?（简单的循环展开无效，括号的位置不同会有变化，比较两方法的不同之处）
+Processor: superscalar processor超标量处理器 definition: 同时处理多条指令（教材319页左右 data flow figure 5.13）
+CPE:问原因:采用什么优化方法降低 / 分析:为什么降低不到最理想的边界值情况（比如多次多路展开 load的读取能力是有限的/ALU的能力是有限的）（是否要画个图？画一个数据流图？）
+ps:考察多次多路的问题:写代码画图来分析
+
+
+
+Chap 6: 25points  choice code explaination
+(Key!!)
+Conventional DRAMs:内存地址的形态是怎样的(包括行号列号) √
+Locality:Temporal && spacial locality: 如何使用这两个概念去评价代码（指令本身的局部性or指令当中数据的局部性  需要分开来看）√
+(problem:6.7)
+Cache: 缓存的结构需要知道 （对于direct-mapped是不考的 过于复杂）[每个set包含一个缓存行????] √
+
+
+
+四 选择
+三 TorF
+填空 30分
+解释题 35分
+画图题 2道 9分
+c编程 19分
