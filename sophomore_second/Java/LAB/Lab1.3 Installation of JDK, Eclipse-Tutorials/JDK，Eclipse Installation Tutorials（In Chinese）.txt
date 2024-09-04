@@ -1,0 +1,10 @@
+文字教程：
+jdk安装：
+https://zhuanlan.zhihu.com/p/107864478?utm_source=wechat_session
+eclipse使用：
+https://www.runoob.com/eclipse/eclipse-tutorial.html
+视频：
+jdk安装
+https://www.bilibili.com/video/av87343795?from=search&seid=17877168531595363174
+eclipse安装：
+https://www.bilibili.com/video/av67370933?p=4
