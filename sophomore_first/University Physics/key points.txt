@@ -1,0 +1,25 @@
+Section I: Multiple choices
+20% - 10 questions, choose only 1 answer in a question
+
+Section II: Explain somethings
+15% - Answer 5 short questions in "words" only, no mathematics
+
+Section III: Compulsory questions
+35% - 5 questions
+
+Section IV: Optional questions
+30% - Select any 2 in 3 questions
+
+**********
+Key points
+**********
+Bernoulli's equation √
+Capacitance, current, voltage √
+Moment of inertia √
+First and second law of thermodynamics, entropy √
+Rotational kinematics √
+Special relativity, relativistic mechanics ×
+Standing waves √
+Superposition of waves √
+Thermal expansion √ 
+Vector calculation √
